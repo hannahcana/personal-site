@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+  <title>Hannah's Portfolio
+  </title>
+    <link rel="stylesheet" type="text/css" href="../Portfolio/CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="../Portfolio/CSS/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<body>
+  <header>
+          <nav id="nav">
+            <a href="../Portfolio/index.html">Home</a>
+            <a href="../Portfolio/about.html">About</a>
+            <a href="../Portfolio/blog/contact.html" target="_blank">Contact</a>
+          </nav>
+  </header>
+  <div class="jumbo">
+      <h1>Welcome to my Portfolio!</h1>
+  </div>
+  <div class="work">
+       <a href="../Portfolio/blog/index.html" target="_blank">
+            <div class="box" style= "background: url(../Portfolio/img/img1.jpeg)
+            no-repeat center center;
+            background-size: cover;">
+
+              <div class="hoverBox">
+                <h3>Blog</h3>
+                <h5>Cooking to Coding</h5>
+             </div>
+           </div>
+     </a>
+     <a href="../Portfolio/dumpling/dumpling.html" target="_blank">
+        <div class="box" style= "background: url(../Portfolio/img/img2.jpeg)
+        no-repeat center center;
+        background-size: cover;">
+          <div class="hoverBox">
+            <h3></h3>
+            <h5>Dumpling or Die</h5>
+          </div>
+        </div>
+      </a>
+      <a href="../Portfolio/water/water.html"  target="_blank">
+        <div class="box" style= "background: url(../Portfolio/img/img3.jpeg)
+        no-repeat center center;
+        background-size: cover;">
+          <div class="hoverBox">
+            <h3>Parallax Effect</h3>
+            <h5>Water</h5>
+
+          </div>
+        </div>
+      </a>
+
+   <a href="../Portfolio/Chocolate/chocolate.html" target="_blank">
+           <div class="box" style= "background: url(../Portfolio/img/img4.jpeg)
+            no-repeat center center;
+            background-size: cover;">
+              <div class="hoverBox">
+                <h3>Sample Site</h3>
+                <h5>Chocolate Lodge</h5>
+
+            </div>
+          </div>
+  </a>
+  <a href="../Portfolio/iphone/smartphone.html" target="_blank">
+      <div class="box" style= "background: url(../Portfolio/img/img5.jpeg)
+      no-repeat center center;
+      background-size: cover;">
+          <div class="hoverBox">
+            <h3>Programming in Swift</h3>
+            <h5>Smartphone Applications</h5>
+
+
+          </div>
+      </div>
+  </a>
+  <a href="../Portfolio/resume/resume.html" target="blank">
+      <div class="box" style= "background: url(../Portfolio/img/img7.jpeg)
+      no-repeat center center;
+      background-size: cover;">
+      <div class="hoverBox">
+        <h3>Resume</h3>
+        <h5></h5>
+    </div>
+   </div>
+ </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  //  $('body').css('background', '#fff');
+  });
+</script><script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("nav");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+  </script>
+</body>
+</html>
